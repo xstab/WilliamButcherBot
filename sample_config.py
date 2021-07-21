@@ -7,8 +7,8 @@ HEROKU = True  # NOTE Make it false if you're not deploying on heroku or docker.
 if HEROKU:
     from os import environ
 
-    BOT_TOKEN = environ.get("BOT_TOKEN", 1874293991:AAHj-YZrqr_pMtZ4ZYv4439HPHczMt1MIho)
-    API_ID = int(environ.get("API_ID", 6798455))
+    BOT_TOKEN = environ.get("1874293991:AAHj-YZrqr_pMtZ4ZYv4439HPHczMt1MIho", )
+    API_ID = int(environ.get("6798455", 6))
     API_HASH = environ.get(
         "API_HASH", "50e975d09902b74b371d0e8acef83f61"
     )
